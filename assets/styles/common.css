@@ -1,0 +1,21 @@
+.input {
+  padding: 10px;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  border-width: thin;
+}
+.input__login {
+  background-color: #F5F5F5;
+}
+.input__login:hover {
+  background-color: #E5E5E5;
+}
+.input__login:focus {
+  outline-color: #0063fb;
+}
+.input__login:focus::-moz-placeholder {
+  color: #0063fb;
+}
+.input__login:focus::placeholder {
+  color: #0063fb;
+}/*# sourceMappingURL=common.css.map */

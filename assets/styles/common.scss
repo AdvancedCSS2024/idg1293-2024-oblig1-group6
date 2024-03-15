@@ -1,3 +1,33 @@
 // YOU MUST USE BEM HERE
-// IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE 
+// IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE
 // Example: input, button, card ...
+
+$input_border: rgb(0, 0, 0, 0.2);
+
+.input {
+    padding: 10px;
+    border-color: $input_border;
+    border-radius: 5px;
+    border-width: thin;
+    &__searchBar {
+
+  }
+
+  &__login {
+    
+    background-color: #F5F5F5;
+
+    &:hover{
+        background-color: #E5E5E5;
+    }
+    &:focus{
+        outline-color: #0063fb;
+    }
+    &:focus::placeholder {
+        color: #0063fb;
+    }
+  }
+}
+
+
+
