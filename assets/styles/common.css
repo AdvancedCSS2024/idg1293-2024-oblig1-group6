@@ -1,0 +1,21 @@
+html {
+  font-family: sans-serif;
+}
+
+.login__btn {
+  border-radius: 5%;
+  padding: 100px;
+  border: none;
+}
+.login__btn-primary {
+  color: #FFF;
+  background-color: #0063fb;
+}
+.login__btn-flat {
+  color: #0063fb;
+  background-color: transparent;
+}
+.login__btn-flat:hover {
+  background-color: #F1F9FF;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+}/*# sourceMappingURL=common.css.map */

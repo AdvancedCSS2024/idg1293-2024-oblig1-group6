@@ -1,3 +1,30 @@
 // YOU MUST USE BEM HERE
 // IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE 
 // Example: input, button, card ...
+html {
+    font-family: sans-serif;
+}
+
+.login {
+
+    &__btn {
+        border-radius: 5%;   
+        padding: 100px;
+        border: none;
+
+        &-primary {
+            color: #FFF;
+            background-color: #0063fb;
+        } 
+    
+        &-flat {
+            color: #0063fb;
+            background-color: transparent;
+
+            &:hover {
+                background-color: #F1F9FF;
+                box-shadow: 0 1px 3px 1px rgba($color: #000000, $alpha: 0.3);
+            }
+        }
+    }
+}
