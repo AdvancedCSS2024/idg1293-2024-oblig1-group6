@@ -2,9 +2,23 @@ html {
   font-family: sans-serif;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+figure, p {
+  margin: 0;
+}
+
 .login__btn {
-  border-radius: 5%;
-  padding: 100px;
+  border-radius: 6px;
+  padding: 16px;
   border: none;
 }
 .login__btn-primary {
@@ -18,4 +32,27 @@ html {
 .login__btn-flat:hover {
   background-color: #F1F9FF;
   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+.searchBar__mapBtn a {
+  display: flex;
+  align-items: center;
+}
+.searchBar__mapBtn a-icon {
+  padding-right: 5px;
+}
+
+.iconMenu {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(10rem, 1fr));
+}
+.iconMenu__item {
+  text-align: center;
+  padding: 16px 4px;
+}
+.iconMenu__item:focus {
+  outline: 2px solid #06befb;
+}
+.iconMenu__item-external {
+  position: absolute;
 }/*# sourceMappingURL=common.css.map */
