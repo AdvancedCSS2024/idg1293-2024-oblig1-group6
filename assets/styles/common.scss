@@ -1,3 +1,16 @@
 // YOU MUST USE BEM HERE
 // IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE 
 // Example: input, button, card ...
+
+.card {
+    &__info {
+        background-color: #F1F9FF;
+        text-align: center;
+    }
+
+
+    &__login {
+     background-color: bisque;
+     
+    }
+}
