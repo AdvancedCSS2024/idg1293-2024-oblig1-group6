@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #464646;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0 16px;
+  margin: 0;
+  border-bottom: solid 1px;
+}
+.nav__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 2rem;
+  border-bottom: solid 2px;
+  border-color: transparent;
+}
+.nav__item:hover {
+  border-color: #0063fb;
+}
+.nav__item-right {
+  display: flex;
+  justify-content: end;
+  padding: 0 1rem;
+}/*# sourceMappingURL=common.css.map */
