@@ -4,4 +4,14 @@
 }
 .card__login {
   background-color: bisque;
+}
+
+.examplecard {
+  height: 612px;
+  width: 450px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.1764705882), 1px 1px 20px 1px rgba(0, 0, 0, 0.1764705882);
+  border-radius: 15px;
+  margin-left: 50px;
 }/*# sourceMappingURL=common.css.map */
