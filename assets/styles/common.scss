@@ -5,6 +5,10 @@ html {
     font-family: sans-serif;
 }
 
+* {
+    margin: 10px;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -13,6 +17,10 @@ body {
 a {
     text-decoration: none;
     color: #000000;
+}
+
+button {
+    cursor: pointer;
 }
  
 figure, p{
@@ -41,15 +49,47 @@ figure, p{
             }
         }
     }
-}
 
-.searchBar__mapBtn a{
-    display: flex;
-    align-items: center;
-    &-icon {
-        padding-right: 5px;
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: none;
+        padding: 12px;
+        max-width: 48px;
+        max-height: 48px;
+        background-color: transparent;
+        &-icon {
+            text-align: center;
+        }
+        &:hover {
+            background-color: #F1F9FF;
+        }
     }
 }
+
+.searchBar {
+
+    &__submit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: transparent;
+        max-width: 32px;
+    }
+
+    &__mapBtn a{
+        display: flex;
+        align-items: center;
+        width: 4rem;
+        &-icon {
+            padding-right: 5px;
+        }
+    }
+}
+
 
 .iconMenu {
     display: grid;
