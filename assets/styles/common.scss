@@ -1,4 +1,53 @@
 // YOU MUST USE BEM HERE
+
+// IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE
+// Example: input, button, card ...
+
+$input_border: rgb(0, 0, 0, 0.2);
+
+.input {
+    padding: 10px;
+    border-color: $input_border;
+    border-radius: 5px;
+    border-width: thin;
+    
+    &__searchBar {
+      &::placeholder {
+        opacity: 60%;
+      }
+      &:focus{
+        outline-color: #06befb;
+    }
+  }
+// used https://www.w3schools.com/css/css_form.asp to style search bar with images
+  &__login {
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #F5F5F5;
+    border: 0;
+
+    &:hover{
+        background-color: #E5E5E5;
+    }
+
+    &:focus{
+      border-bottom: 2px solid #0063fb;
+      outline: none;
+      border-radius: 0;
+    }
+
+    &:focus::placeholder {
+        color: #0063fb;
+    }
+  }
+
+  &__checkbox {
+    &:hover {
+    }
+  }
+}
+
+
 // IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE 
 // Example: input, button, card ...
 html {
@@ -139,4 +188,5 @@ figure, p{
         }
     }
 }
+
 
