@@ -1,4 +1,64 @@
 
+.card__phone {
+  background-color: #f1f9ff;
+  text-align: center;
+  height: 480px;
+  width: 648px;
+}
+.card__login {
+  height: 612px;
+  width: 450px;
+  background-color: white;
+  box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.168627451), 1px 1px 10px 1px rgba(0, 0, 0, 0.1137254902);
+  border-radius: 15px;
+  margin-left: 50px;
+}
+.card__home {
+  margin: 50px 0 50px 50px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding-bottom: 25px;
+  border-radius: 10px;
+}
+.card__home:hover {
+  background-color: rgba(6, 190, 251, 0.1215686275);
+}
+.card__image {
+  box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.1137254902);
+  background-image: url(../images/Cat.jpg);
+  height: 299.33px;
+  width: 301.33px;
+  border: solid #C3CCD9;
+  border-width: 2px;
+  border-radius: 10px;
+}
+.card__image-icon {
+  display: flex;
+  margin-left: 250px;
+  margin-top: 3px;
+  padding: 12px;
+  border-radius: 50%;
+  border: none;
+  width: 24px;
+}
+.card__image-icon:hover {
+  background-color: rgba(6, 190, 251, 0.1215686275);
+}
+.card__image-cost {
+  margin-top: 215px;
+  margin-left: 10px;
+  font-size: 18px;
+  color: white;
+}
+.card__text-place {
+  margin: 5px;
+  color: rgba(0, 0, 0, 0.4901960784);
+  font-size: 12px;
+}
+.card__text-title {
+  margin: 5px;
+
+
 .input {
   padding: 10px;
   border-color: rgba(0, 0, 0, 0.2);

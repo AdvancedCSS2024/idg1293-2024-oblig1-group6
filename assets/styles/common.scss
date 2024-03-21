@@ -3,6 +3,73 @@
 // IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE
 // Example: input, button, card ...
 
+.card {
+  &__phone {
+    background-color: #f1f9ff;
+    text-align: center;
+    height: 480px;
+    width: 648px;
+  }
+
+  &__login {
+    height: 612px;
+    width: 450px;
+    background-color: white;
+    box-shadow: 1px 1px 15px 1px #0000002b, 1px 1px 10px 1px #0000001d;
+    border-radius: 15px;
+    margin-left: 50px;
+  }
+
+  &__home {
+    margin: 50px 0 50px 50px;
+    max-width: fit-content;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    &:hover{
+        background-color: #06befb1f;
+    }
+  }
+
+  &__image {
+    box-shadow: 1px 1px 15px 1px #0000001d;
+    background-image: url(../images/Cat.jpg);
+    height: 299.33px;
+    width: 301.33px;
+    border: solid #C3CCD9;
+    border-width: 2px;
+    border-radius: 10px;
+    &-icon {
+      display: flex;
+      margin-left: 250px;
+      margin-top: 3px;
+      padding: 12px;
+      border-radius: 50%;
+      border: none;
+      width: 24px;
+      &:hover {
+        background-color: #06befb1f;
+      }
+    }
+    &-cost {
+        margin-top: 215px;
+        margin-left: 10px;
+        font-size: 18px;
+        color: white;
+    }
+  }
+
+  &__text-place {
+
+    margin: 5px;
+    color: #0000007d;
+    font-size: 12px;
+  }
+
+  &__text-title {
+    margin: 5px;
+  }
+}
+
 $input_border: rgb(0, 0, 0, 0.2);
 
 .input {
@@ -48,8 +115,6 @@ $input_border: rgb(0, 0, 0, 0.2);
 }
 
 
-// IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE 
-// Example: input, button, card ...
 html {
     font-family: sans-serif;
 }
@@ -188,5 +253,4 @@ figure, p{
         }
     }
 }
-
 
