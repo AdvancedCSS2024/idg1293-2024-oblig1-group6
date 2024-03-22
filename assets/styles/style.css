@@ -12,6 +12,7 @@
 
 html {
   font-family: sans-serif;
+  margin: 0;
 }
 
 body {
@@ -313,7 +314,10 @@ span a {
   color: #0063fb;
 }
 
-#pageOne .nav * {
+#pageOne html {
+  margin: 0 !important;
+}
+#pageOne header, #pageOne header * {
   margin: 0;
 }
 #pageOne .nav {

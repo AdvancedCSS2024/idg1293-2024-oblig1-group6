@@ -5,8 +5,11 @@
 
 
 #pageOne {
-    .nav *{
-        margin: 0;
+    html {
+        margin: 0!important;
+    }
+    header, header *{
+        margin: 0; 
     }
     .nav {
         gap: 0;
