@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Screenshot 1 page</title>
+  <title>Screenshot 2 page</title>
+  <link rel="stylesheet" href="assets/styles/style.css">
 </head>
-<body>
-  
+
+<body class="screenshot2">
+  <section class="screenshot2-section">
+
+    <div class="card card__phone">
+      <img src="assets/iconsImages/phone.jpg" alt="bilde av en telefon">
+      <div class="card__phone-text">
+        <div>
+          <p>Logg inn for å sende meldinger, lagre favoritter og søk. Du får også varsler når det skjer noe nytt!</p>
+        </div>
+          <p><span>Problemer med innloggingen?<a href="index.html">Her kan du finne hjelp</a></span></p>
+        <span><a href="index.html">Tilbake til FINN</a></span>
+      </div>
+    </div>
+    <!-- Uses a div container to contain the card. Uses span to fix the links because the implementation of screenshot 1 removes link styling.. -->
+
+    <div class="card card__login">
+      <div>
+        <img class="card__logo-finn" src="assets/iconsImages/finn.svg" alt="finn logo">
+        <img class="card__logo-schibsted"
+          src="https://d3iwtia3ndepsv.cloudfront.net/web/v4.5.31/assets/4c671371b02d586f499a4d89bf58fa50.png"
+          alt="schibsted logo">
+      </div>
+      <!-- Inspected the code on Finn and found the link for the schibsted logo -->
+
+      <h1 class="card__h1">Logg inn</h1>
+      <!-- Puts the log in text over the fields, maybe this should be a label? I had a lot of trouble getting a form to fit in the card -->
+      <div>
+        <input class="input input__login" type="email" name="epost" placeholder="Skriv inn din e-postadresse *">
+        <label class="card__text-place">* nødvendig felt</label>
+      </div>
+      <div>
+        <input class="input input__login input__login-eye" type="password" name="passord"
+          placeholder="Vennligst oppi passordet ditt *">
+        <label class="card__text-place">* nødvendig felt</label>
+      </div>
+      <!-- I originally made a form with help from W3 schools, but making it work inside the card was diffcult so I set it up with divs since it has no back-end functionality -->
+        <span>
+        <a class="card__a" href="index.html">Glemt passord?</a>
+        </span>
+        <!-- the good old span from before, fixes the link styling because screenshot 1 CSS removes link styling.. -->
+        <div class="input__login-info">
+          <input class="input__checkbox" type="checkbox"><label>Hold meg innlogget</label><img
+            class="input__checkbox-icon" src="assets/iconsImages/info.svg" alt="information icon">
+        </div>
+        <!-- I wanted to add the background hover functionality here, but I can't for the life of me figure out how to add it to a checkbox, maybe it has to be applied through the input tag? -->
+        <div>
+          <input class="login login__btn login__btn-primary" type="submit" value="Logg på">
+        </div>
+        <!-- It's.. a button, if I added back-end it would let you log in (amazing?!) -->
+        <div>
+          <input class="login login__btn login__btn-flat" type="submit" value="Opprette ny konto">
+          <!-- Pretty sure this should all be in a form, but hopefully it's good enough for now -->
+        </div>
+        <div class="card__footer">Hjelp Personvernerklæring Vilkår Om Schibsted-konto</div>
+      </div>
+      <!-- Adds the text below the card, it's not exactly how I want it but I tried to use the right colors from the fabric site etc. -->
+
+  </section>
 </body>
+
 </html>

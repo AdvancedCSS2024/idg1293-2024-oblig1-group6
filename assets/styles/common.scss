@@ -1,3 +1,397 @@
 // YOU MUST USE BEM HERE
-// IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE 
+
+// IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE
 // Example: input, button, card ...
+
+// General selectors
+
+// All colour variables
+$input_border: rgb(0, 0, 0, 0.2);
+$primary_blue: #0063fb;
+$secondary_blue: #06befb;
+$finn_white: #fff;
+
+$text_licorice: #464646;
+$text_stone: #767676;
+$text_sardine: #c3ccd9;
+
+$background_toothpaste: #b6f0ff;
+$background_ice: #f1f9ff;
+$background_marble: #f6f8fb;
+$background_milk: #ffffff;
+$background_mint: #cdfee5;
+$background_banana: #fff5c8;
+$background_salmon: #ffefef;
+
+$detail_lime: #059e6f;
+$detail_pea: #2ee69f;
+$detail_cherry: #d91f0a;
+$detail_watermelon: #ff5844;
+
+$blue_100: #e1edfe;
+
+$aqua_400: #06befb;
+
+$bluegray_300: #c3ccd9;
+
+$gray_100: #f5f5f5;
+$gray_200: #e5e5e5;
+$gray_700: #464646;
+$gray_300: #cccccc;
+
+// Fonts
+@font-face {
+  font-family: "finn_light";
+  src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Light.woff2);
+}
+
+@font-face {
+  font-family: "finn_bold";
+  src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Medium.woff2);
+}
+
+
+* {
+  margin: 10px;
+}
+
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $gray_700;
+}
+
+figure,
+p {
+  margin: 0;
+}
+
+p {
+  max-width: 60ch;
+}
+
+button {
+  cursor: pointer;
+}
+
+// Top Navigation
+.nav {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0 16px;
+  margin: 0;
+  border-bottom: solid 1px;
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 2rem;
+    border-bottom: solid 2px;
+    border-color: transparent;
+
+    &:hover {
+      border-color: $primary_blue;
+    }
+
+    &-right {
+      display: flex;
+      justify-content: end;
+      padding: 0 1rem;
+    }
+  }
+}
+
+
+// Menu Navigation
+.iconMenu {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(10rem, 1fr));
+  &__item {
+    text-align: center;
+    padding: 16px 4px;
+    &:focus {
+      outline: 2px solid $aqua_400;
+    }
+    &-external {
+      position: absolute;
+    }
+  }
+}
+
+// Inputs
+.input {
+  padding: 10px;
+  border-color: $input_border;
+  border-radius: 5px;
+  border-width: thin;
+
+  // Search bar section
+  &__searchBar {
+    width: 840px;
+    height: 30px;
+    background-image: url(../iconsImages/search.svg);
+    background-repeat: no-repeat;
+    background-position: 99%;
+    &::placeholder {
+      opacity: 60%;
+    }
+    &:focus {
+      outline-color: $aqua_400;
+    }
+    &__submit {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      background-color: transparent;
+      max-width: 32px;
+    }
+    &__mapBtn a{
+        display: flex;
+        align-items: center;
+        width: 4rem;
+        &-icon {
+            padding-right: 5px;
+        }
+    }
+  }
+
+  // Login section
+  &__login {
+    font-size: 12px;
+    font-weight: bold;
+    background-color: $gray_200;
+    border: 0;
+    height: 35px;
+    width: 380px;
+    &:hover {
+      background-color: $gray_300;
+    }
+
+    &:focus {
+      border-bottom: 2px solid $primary_blue;
+      outline: none;
+      border-radius: 0;
+    }
+
+    &:focus::placeholder {
+      color: $primary_blue;
+    }
+    &-info {
+      display: inline-flex;
+      margin: 20px;
+      font-family: "finn_light";
+    }
+    &-eye {
+      background-image: url(../iconsImages/eye-on.svg);
+      background-repeat: no-repeat;
+      background-position: 96%;
+    }
+  }
+
+  // Checkbox for keep me signed in
+  &__checkbox {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+
+
+
+    &-icon {
+      margin-left: 155px;
+      margin-top: 3px;
+      padding: 12px;
+      border-radius: 50%;
+      &:hover {
+        background-color: $background_marble;
+      }
+    }
+
+  }
+}
+
+.login {
+  font-family: "finn_bold";
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  // Login button
+  &__btn {
+    border-radius: 6px;
+    padding: 16px;
+    border: none;
+    width: 400px;
+    &-primary {
+      color: $finn_white;
+      background-color: $primary_blue;
+    }
+
+    &-flat {
+      color: $primary_blue;
+      background-color: transparent;
+
+      &:hover {
+        background-color: $background_ice;
+        box-shadow: 0 1px 3px 1px rgba($color: #000000, $alpha: 0.3);
+      }
+    }
+  }
+
+  // Info button this is also used for the show password 
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    padding: 12px;
+    max-width: 48px;
+    max-height: 48px;
+    background-color: transparent;
+    &-icon {
+      text-align: center;
+    }
+    &:hover {
+      background-color: $background_ice;
+    }
+  }
+}
+
+// Card elements
+.card {
+  font-family: "finn_light";
+  font-size: 16px;
+  color: $text_stone;
+  margin-left: 0;
+
+  &__a {
+    display: inline-flex;
+    color: $primary_blue;
+    text-decoration: underline;
+    font-size: 14px;
+  }
+
+  &__h1 {
+    color: $text_licorice;
+    font-family: "finn_bold";
+    margin-left: 20px;
+  }
+
+  &__logo {
+    &-finn {
+      height: 12px;
+      margin-right: 225px;
+    }
+
+    &-schibsted {
+      height: 24px;
+    }
+  }
+
+  // Login Page left card
+  &__phone {
+    background-color: $background_ice;
+    text-align: center;
+    height: 480px;
+    width: 648px;
+    margin-top: 200px;
+    margin-right: 0;
+    line-height: 22px;
+    overflow-y: scroll;
+    &-text {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  // Login Page right card
+  &__login {
+    height: 612px;
+    width: 450px;
+    background-color: $background_milk;
+    box-shadow: 1px 1px 15px 1px #0000002b, 1px 1px 10px 1px #0000001d;
+    border-radius: 9px;
+    margin-top: 125px;
+  }
+
+  &__home {
+    margin: 50px 0 50px 50px;
+    max-width: fit-content;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    &:hover {
+      background-color: $background_ice;
+    }
+  }
+
+  // Front page card
+  &__image {
+    box-shadow: 1px 1px 15px 1px #0000001d;
+    background-image: url(../iconsImages/Cat.jpg);
+    height: 299.33px;
+    width: 301.33px;
+    border: solid $bluegray_300;
+    border-width: 2px;
+    border-radius: 10px;
+    // Favourite icon
+    &-icon {
+      display: flex;
+      margin-left: 250px;
+      margin-top: 3px;
+      padding: 12px;
+      border-radius: 50%;
+      border: none;
+      width: 24px;
+      &:hover {
+        background-color: $blue_100;
+      }
+    }
+    &-cost {
+      margin-top: 215px;
+      margin-left: 10px;
+      font-size: 18px;
+      color: $background_milk;
+      font-weight: bolder;
+    }
+  }
+
+  // Front Page card bottom text part
+  &__text {
+    margin-left: 12px;
+
+    &-place {
+      font-size: 12px;
+      color: $text_stone;
+    }
+
+    &-title {
+      font-size: 18px;
+      color: $text_licorice;
+    }
+  }
+
+  &__footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    word-spacing: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+}
+
+span a {
+  color: $primary_blue;
+}

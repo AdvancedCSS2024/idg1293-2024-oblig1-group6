@@ -1,1 +1,75 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
+@use "common.scss";
+
+// everything used for making screenshot 1
+
+
+#pageOne {
+    html {
+        margin: 0!important;
+    }
+    header, header *{
+        margin: 0; 
+    }
+    .nav {
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+        li {
+            padding: 0 5px;
+        }
+        &__item {
+            height: 44px;
+            margin: 0;
+            &-left {
+            margin-right: 100px;
+            }
+        }
+    // fixing the sizes for the main navigation menu on top of the screen
+    }
+        
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        // making all of the sections to line up in the center    
+    }
+
+    .iconMenu {
+        grid-template-columns: repeat(6, minmax(9rem, 1fr));
+        max-width: 980px;
+        // ajusting the icon menu size to be a bit smaller
+    }
+    
+
+    .flex {
+        display:flex ;
+        align-items: center;
+        h1 {
+            margin-right: 10px;
+        }
+        #ad {
+            color: common.$primary_blue;
+            // changing the link colour for this one instance 
+        }
+        // fixing it so the map and searchbar, ambefalinger and the link, and ads is on the same line
+    } 
+}
+
+
+
+
+
+// Sets the background color for screenshot2 since it's different from screenshot 1
+.screenshot2 {
+  background-color: common.$background_marble;
+  // Using a variable from the common.scss to get the marble color from the fabric site
+}
+// Applies flex and lines up the content of screenshot2
+.screenshot2-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  // I just use flex and direction to line up the content to be efficient since the page only has two cards
+}
