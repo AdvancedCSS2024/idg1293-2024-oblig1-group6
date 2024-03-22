@@ -1,3 +1,53 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
 @use "common.scss";
 
+// everything used for making screenshot 1
+#pageOne {
+    .nav {
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+        li {
+            padding: 0 5px;
+        }
+        &__item {
+            height: 44px;
+            margin: 0;
+            &-left {
+            margin-right: 100px;
+            }
+        }
+    // fixing the sizes for the main navigation menu on top of the screen
+    }
+        
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        // making all of the sections to line up in the center    
+    }
+
+    .iconMenu {
+        grid-template-columns: repeat(6, minmax(9rem, 1fr));
+        max-width: 980px;
+        // ajusting the icon menu size to be a bit smaller
+    }
+    
+
+    .flex {
+        display:flex ;
+        align-items: center;
+        h1 {
+            margin-right: 10px;
+        }
+        #ad {
+            color: common.$primary_blue;
+            // changing the link colour for this one instance 
+        }
+        // fixing it so the map and searchbar, ambefalinger and the link, and ads is on the same line
+    } 
+}
+
+
+

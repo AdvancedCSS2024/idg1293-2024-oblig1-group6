@@ -6,10 +6,11 @@
   <link rel="stylesheet" href="/assets/styles/style.css">
   <title>Screenshot 1 page</title>
 </head>
-<body>
+<body id="pageOne">
   
   <header>
     <nav>
+      <!--top navigation menu-->
       <ul class="nav">
         <li>
           <a href="https://www.finn.no/">
@@ -26,6 +27,7 @@
               <img src="/assets/iconsImages/varsling.svg" alt="Alert icon">
               <p>Varslinger</p>
             </figure>
+          </a>
         </li>
         
         <li>
@@ -34,6 +36,7 @@
               <img src="/assets/iconsImages/nyAnnonse.svg" alt="Add new icon">
               <p>Ny annonse</p>
             </figure>
+          </a>
         </li>
 
         <li>
@@ -42,6 +45,7 @@
               <img src="/assets/iconsImages/meldinger.svg" alt="Messages icon">
               <p>Meldinger</p>
             </figure>
+          </a>
         </li>
 
         <li>
@@ -57,21 +61,20 @@
   </header>
 
   <main>
-
+    <!--search bar section-->
+  <div class="flex">
     <div class="input">
-      <input class="input input__searchBar" type="text" placeholder="Søk etter FINN-kode">
+      <input class="input input__searchBar" type="text" placeholder="Søk etter FINN-kode"> 
     </div>
-    <button class="searchBar__submit" type="submit">
-      <img src="/assets/iconsImages/search.svg" alt="Søk">
-    </button>
-
-    <figure class="searchBar__mapBtn">
+    <figure class="input__searchBar__mapBtn">
       <a href="https://www.finn.no/map">
-        <img class="searchBar__mapBtn-icon" src="/assets/iconsImages/map.svg" alt="Map icon">
+        <img class="input__searchBar__mapBtn-icon" src="/assets/iconsImages/map.svg" alt="Map icon">
         <strong>Kart</strong>
       </a>
-    </figure>  
+    </figure>
+  </div>
 
+  <!--secondary navigation menu linking to the various category pages-->
     <nav class="iconMenu">
       <figure class="iconMenu__item">
         <a href="https://www.finn.no/bap/browse.html">
@@ -144,7 +147,6 @@
           <img class="iconMenu__item-external" src="/assets/iconsImages/external.svg" alt="External link">
           <p>Bilabonnoment</p>
         </a>
-  
       </figure>
   
       <figure class="iconMenu__item">
@@ -164,36 +166,43 @@
       </figure>
     </nav>
 
-    <section>
+    <!--ad section with various ads for the same cat-->
+    <div>
+      <div class="flex">
       <h1>Ambefalinger til deg</h1>
-      <a href=""><p>Hvorfor ambefaler vi disse?</p></a>
-      <div class="card card__home ">
-        <div class="card__image">
-          <img class="card__image-icon" src="assets/iconsImages/favorite.svg" alt="">
-          <p class="card__image-cost">69 kr</p>
-        </div>
-        <p class="card__text card__text-place">Oslo</p>
-        <strong class="card__text card__text-title">Selger klær til billig penge</strong>
+      <a href="index.html" id="ad"><p>Hvorfor ambefaler vi disse annonsene?</p></a>     
       </div>
 
-      <div class="card card__home ">
-        <div class="card__image">
-          <img class="card__image-icon" src="assets/iconsImages/favorite.svg" alt="">
-          <p class="card__image-cost">69 kr</p>
+      <div class="flex">
+        <div class="card card__home ">
+          <div class="card__image">
+            <img class="card__image-icon" src="assets/iconsImages/favorite.svg" alt="">
+            <p class="card__image-cost">69 kr</p>
+          </div>
+          <p class="card__text card__text-place">Oslo</p>
+          <strong class="card__text card__text-title">Selger katt til billig penge</strong>
         </div>
-        <p class="card__text card__text-place">Oslo</p>
-        <strong class="card__text card__text-title">Selger klær til billig penge</strong>
-      </div>
 
-      <div class="card card__home ">
-        <div class="card__image">
-          <img class="card__image-icon" src="assets/iconsImages/favorite.svg" alt="">
-          <p class="card__image-cost">69 kr</p>
+        <div class="card card__home ">
+          <div class="card__image">
+            <img class="card__image-icon" src="assets/iconsImages/favorite.svg" alt="">
+            <p class="card__image-cost">69 kr</p>
+          </div>
+          <p class="card__text card__text-place">Oslo</p>
+          <strong class="card__text card__text-title">Selger katt til billig penge</strong>
         </div>
-        <p class="card__text card__text-place">Oslo</p>
-        <strong class="card__text card__text-title">Selger klær til billig penge</strong>
+
+        <div class="card card__home ">
+          <div class="card__image">
+            <img class="card__image-icon" src="assets/iconsImages/favorite.svg" alt="">
+            <p class="card__image-cost">6969 kr</p>
+          </div>
+          <p class="card__text card__text-place">Gjøvik</p>
+          <strong class="card__text card__text-title">Selger katt til billig penge</strong>
+        </div>
       </div>
-    </section>
+      <!--div was split in two parts so that the display flex can work effectivly-->
+    </div>
 
   </main>
 

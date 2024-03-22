@@ -61,23 +61,6 @@ button {
   position: absolute;
 }
 
-.searchBar__submit {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  background-color: transparent;
-  max-width: 32px;
-}
-.searchBar__mapBtn a {
-  display: flex;
-  align-items: center;
-  width: 4rem;
-}
-.searchBar__mapBtn a-icon {
-  padding-right: 5px;
-}
-
 .input {
   padding: 10px;
   border-color: rgba(0, 0, 0, 0.2);
@@ -85,7 +68,8 @@ button {
   border-width: thin;
 }
 .input__searchBar {
-  width: 600px;
+  width: 840px;
+  height: 30px;
   background-image: url(../iconsImages/search.svg);
   background-repeat: no-repeat;
   background-position: 99%;
@@ -98,6 +82,22 @@ button {
 }
 .input__searchBar:focus {
   outline-color: #06BEFB;
+}
+.input__searchBar__submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  max-width: 32px;
+}
+.input__searchBar__mapBtn a {
+  display: flex;
+  align-items: center;
+  width: 4rem;
+}
+.input__searchBar__mapBtn a-icon {
+  padding-right: 5px;
 }
 .input__login {
   font-size: 12px;
@@ -189,7 +189,7 @@ button {
 }
 .card__image {
   box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.1137254902);
-  background-image: url(../images/Cat.jpg);
+  background-image: url(../iconsImages/Cat.jpg);
   height: 299.33px;
   width: 301.33px;
   border: solid #C3CCD9;
