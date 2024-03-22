@@ -2,6 +2,10 @@
 
 // IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE
 // Example: input, button, card ...
+
+// General selectors
+
+// All colour variables
 $input_border: rgb(0, 0, 0, 0.2);
 $primary_blue: #0063fb;
 $secondary_blue: #06befb;
@@ -35,6 +39,7 @@ $gray_200: #e5e5e5;
 $gray_700: #464646;
 $gray_300: #cccccc;
 
+// Fonts
 @font-face {
   font-family: "finn_light";
   src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Light.woff2);
@@ -79,6 +84,7 @@ button {
   cursor: pointer;
 }
 
+// Top Navigation
 .nav {
   display: flex;
   gap: 10px;
@@ -108,7 +114,7 @@ button {
 }
 
 
-=======
+// Menu Navigation
 .iconMenu {
   display: grid;
   grid-template-columns: repeat(6, minmax(10rem, 1fr));
@@ -124,12 +130,14 @@ button {
   }
 }
 
+// Inputs
 .input {
   padding: 10px;
   border-color: $input_border;
   border-radius: 5px;
   border-width: thin;
 
+  // Search bar section
   &__searchBar {
     width: 840px;
     height: 30px;
@@ -150,8 +158,6 @@ button {
       background-color: transparent;
       max-width: 32px;
 
-
-
     &__mapBtn a{
         display: flex;
         align-items: center;
@@ -162,6 +168,7 @@ button {
     }
   }
 
+  // Login section
   &__login {
     font-size: 12px;
     font-weight: bold;
@@ -194,6 +201,7 @@ button {
     }
   }
 
+  // Checkbox for keep me signed in
   &__checkbox {
     cursor: pointer;
     height: 20px;
@@ -219,6 +227,7 @@ button {
   font-size: 17px;
   font-weight: 500;
   letter-spacing: 0.25px;
+  // Login button
   &__btn {
     border-radius: 6px;
     padding: 16px;
@@ -240,6 +249,7 @@ button {
     }
   }
 
+  // Info button this is also used for the show password 
   &__info {
     display: flex;
     align-items: center;
@@ -259,6 +269,7 @@ button {
   }
 }
 
+// Card elements
 .card {
   font-family: "finn_light";
   font-size: 16px;
@@ -289,6 +300,7 @@ button {
     }
   }
 
+  // Login Page left card
   &__phone {
     background-color: $background_ice;
     text-align: center;
@@ -304,6 +316,7 @@ button {
     }
   }
 
+  // Login Page right card
   &__login {
     height: 612px;
     width: 450px;
@@ -323,6 +336,7 @@ button {
     }
   }
 
+  // Front page card
   &__image {
     box-shadow: 1px 1px 15px 1px #0000001d;
     background-image: url(../iconsImages/Cat.jpg);
@@ -331,6 +345,7 @@ button {
     border: solid $bluegray_300;
     border-width: 2px;
     border-radius: 10px;
+    // Favourite icon
     &-icon {
       display: flex;
       margin-left: 250px;
@@ -352,6 +367,7 @@ button {
     }
   }
 
+  // Front Page card bottom text part
   &__text {
     margin-left: 12px;
 
@@ -379,4 +395,4 @@ button {
 span a {
   color: $primary_blue;
 }
-
+}

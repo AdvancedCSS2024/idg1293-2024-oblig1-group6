@@ -1,18 +1,19 @@
 # Report
-insert images of the printed pages
+![Page1 notes](../assets/iconsImages/screenshotPage1.jpg)
+![Page2 notes](../assets/iconsImages/screenshotPage2.jpg)
 ## Part 1 - Making components and demo page 
 
 First and foremost we had to get the icons for the various pages and for that we went on the fabric site and finn and copied the svg elements and pasted them into a txt file and saved it as a .svg file so that we didn't have to deal with long strings of code that was used on the pages.
 After that we split up the work, Marius making the Nav and buttons and Adrian making the inputs and cards.
 
 ### Buttons and Nav
-I first started by setting up the html for the button branch making it a nav with figures inside of it, each figure a "button" having a img with the appropreate svg and a paragraph with the name having an <a> encompas them and linking it to the finn site's pages.
+I first started by setting up the html for the button branch making it a nav with figures inside of it, each figure a "button" having a img with the appropreate svg and a paragraph with the name having an <"a"> encompas them and linking it to the finn site's pages.
 After that I made the two buttons used for the login page one marking as primary (based on the fabric site) then the flat button. and at last made the various other buttons like the info, show password eye, search button and the map button that will be places alongside the search bar later.
-Then to set up the scss I started with the navigation to the other store sites buttons. First by placing them into a grid making 6 buttons pr line like the main page then using text-align to put the text and icons in the center of the buttons and made a focus outline like the real page has aswell as adding the extra external icons on the 3 last buttons using position absolute. I also added a general rule for all <a> as most of them would have no styling except the forgotten password and the one paragraph on the ad section on the front page
+Then to set up the scss I started with the navigation to the other store sites buttons. First by placing them into a grid making 6 buttons pr line like the main page then using text-align to put the text and icons in the center of the buttons and made a focus outline like the real page has aswell as adding the extra external icons on the 3 last buttons using position absolute. I also added a general rule for all <"a"> as most of them would have no styling except the forgotten password and the one paragraph on the ad section on the front page
 The real site has it so when you hover it would change the icon colour from blue to grey but after a lot of trial and error I couldn't get it to work reliably. I know the main page uses path stroke and fill to edit the colour but every icon is different so by editing something for one it would ruin another cause not all of the icons was alike in buildup. So if I wanted to add the effect it would require a lot of time on each and every icon.
 
 So after finishing off with the buttons I set up a pull request on git and went to work on the top navigation menu.
-Started by making a <nav> then inserted a unordered list having a figure with a svg img and paragraph for all of them also making sure to make the finn logo button being a separate class with -left while the other buttons had -right so I could split them up as seen on the front page (We tried making the elements as close to the final pages as possible early on to save on the time later, not to make it one to one but close).
+Started by making a <"nav"> then inserted a unordered list having a figure with a svg img and paragraph for all of them also making sure to make the finn logo button being a separate class with -left while the other buttons had -right so I could split them up as seen on the front page (We tried making the elements as close to the final pages as possible early on to save on the time later, not to make it one to one but close).
 The styling I wanted to implement was to make sure it had the blue underline and not pushing the text/icons upwards when hovering so the way to accomplish that was to have a border-bottom there always but to just have it transparent until being hovered on, that way it woul look consistant. I used flex and list style and various padding and margins aswell as gap to get some spacing. And adding the border on the bottom of the nav.
 
 ### Inputs and cards

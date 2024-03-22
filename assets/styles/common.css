@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "finn_light";
   src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Light.woff2);
@@ -109,31 +108,15 @@ button {
   background-color: transparent;
   max-width: 32px;
 }
-.input__searchBar__mapBtn a {
+.input__searchBar__submit__mapBtn a {
   display: flex;
   align-items: center;
   width: 4rem;
 }
-.input__searchBar__mapBtn a-icon {
+.input__searchBar__submit__mapBtn a-icon {
   padding-right: 5px;
 }
-.input__searchBar__submit {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  background-color: transparent;
-  max-width: 32px;
-}
-.input__searchBar__mapBtn a {
-  display: flex;
-  align-items: center;
-  width: 4rem;
-}
-.input__searchBar__mapBtn a-icon {
-  padding-right: 5px;
-}
-.input__login {
+.input__searchBar__login {
   font-size: 12px;
   font-weight: bold;
   background-color: #e5e5e5;
@@ -141,72 +124,69 @@ button {
   height: 35px;
   width: 380px;
 }
-.input__login:hover {
+.input__searchBar__login:hover {
   background-color: #cccccc;
 }
-.input__login:focus {
+.input__searchBar__login:focus {
   border-bottom: 2px solid #0063fb;
   outline: none;
   border-radius: 0;
 }
-.input__login:focus::-moz-placeholder {
+.input__searchBar__login:focus::-moz-placeholder {
   color: #0063fb;
 }
-.input__login:focus::placeholder {
+.input__searchBar__login:focus::placeholder {
   color: #0063fb;
 }
-.input__login-info {
+.input__searchBar__login-info {
   display: inline-flex;
   margin: 20px;
   font-family: "finn_light";
 }
-.input__login-eye {
+.input__searchBar__login-eye {
   background-image: url(../iconsImages/eye-on.svg);
   background-repeat: no-repeat;
   background-position: 96%;
 }
-.input__checkbox {
+.input__searchBar__checkbox {
   cursor: pointer;
   height: 20px;
   width: 20px;
 }
-
-.input__checkbox-icon {
+.input__searchBar__checkbox-icon {
   margin-left: 155px;
   margin-top: 3px;
   padding: 12px;
   border-radius: 50%;
 }
-.input__checkbox-icon:hover {
+.input__searchBar__checkbox-icon:hover {
   background-color: #f6f8fb;
 }
-
-.login {
+.input .login {
   font-family: "finn_bold";
   font-size: 17px;
   font-weight: 500;
   letter-spacing: 0.25px;
 }
-
-.login__btn {
+.input .login__btn {
   border-radius: 6px;
   padding: 16px;
   border: none;
   width: 400px;
 }
-.login__btn-primary {
+.input .login__btn-primary {
   color: #fff;
   background-color: #0063fb;
 }
-.login__btn-flat {
+.input .login__btn-flat {
   color: #0063fb;
   background-color: transparent;
 }
-.login__btn-flat:hover {
+.input .login__btn-flat:hover {
   background-color: #f1f9ff;
   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3);
 }
-.login__info {
+.input .login__info {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -217,38 +197,37 @@ button {
   max-height: 48px;
   background-color: transparent;
 }
-.login__info-icon {
+.input .login__info-icon {
   text-align: center;
 }
-.login__info:hover {
+.input .login__info:hover {
   background-color: #f1f9ff;
 }
-
-.card {
+.input .card {
   font-family: "finn_light";
   font-size: 16px;
   color: #767676;
   margin-left: 0;
 }
-.card__a {
+.input .card__a {
   display: inline-flex;
   color: #0063fb;
   text-decoration: underline;
   font-size: 14px;
 }
-.card__h1 {
+.input .card__h1 {
   color: #464646;
   font-family: "finn_bold";
   margin-left: 20px;
 }
-.card__logo-finn {
+.input .card__logo-finn {
   height: 12px;
   margin-right: 225px;
 }
-.card__logo-schibsted {
+.input .card__logo-schibsted {
   height: 24px;
 }
-.card__phone {
+.input .card__phone {
   background-color: #f1f9ff;
   text-align: center;
   height: 480px;
@@ -258,11 +237,11 @@ button {
   line-height: 22px;
   overflow-y: scroll;
 }
-.card__phone-text {
+.input .card__phone-text {
   display: flex;
   flex-direction: column;
 }
-.card__login {
+.input .card__login {
   height: 612px;
   width: 450px;
   background-color: #ffffff;
@@ -270,17 +249,17 @@ button {
   border-radius: 9px;
   margin-top: 125px;
 }
-.card__home {
+.input .card__home {
   margin: 50px 0 50px 50px;
   max-width: -moz-fit-content;
   max-width: fit-content;
   padding-bottom: 25px;
   border-radius: 10px;
 }
-.card__home:hover {
+.input .card__home:hover {
   background-color: #f1f9ff;
 }
-.card__image {
+.input .card__image {
   box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.1137254902);
   background-image: url(../iconsImages/Cat.jpg);
   height: 299.33px;
@@ -289,7 +268,7 @@ button {
   border-width: 2px;
   border-radius: 10px;
 }
-.card__image-icon {
+.input .card__image-icon {
   display: flex;
   margin-left: 250px;
   margin-top: 3px;
@@ -298,28 +277,28 @@ button {
   border: none;
   width: 24px;
 }
-.card__image-icon:hover {
+.input .card__image-icon:hover {
   background-color: #e1edfe;
 }
-.card__image-cost {
+.input .card__image-cost {
   margin-top: 215px;
   margin-left: 10px;
   font-size: 18px;
   color: #ffffff;
   font-weight: bolder;
 }
-.card__text {
+.input .card__text {
   margin-left: 12px;
 }
-.card__text-place {
+.input .card__text-place {
   font-size: 12px;
   color: #767676;
 }
-.card__text-title {
+.input .card__text-title {
   font-size: 18px;
   color: #464646;
 }
-.card__footer {
+.input .card__footer {
   margin-top: 30px;
   text-align: center;
   font-size: 14px;
@@ -327,7 +306,6 @@ button {
   font-weight: 600;
   letter-spacing: 0.5px;
 }
-
-span a {
+.input span a {
   color: #0063fb;
 }/*# sourceMappingURL=common.css.map */
