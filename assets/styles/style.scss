@@ -5,8 +5,10 @@
 
 
 #pageOne {
-    
     .nav *{
+        margin: 0;
+    }
+    .nav {
         gap: 0;
         justify-content: center;
         align-items: center;
