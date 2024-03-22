@@ -51,3 +51,18 @@
 
 
 
+
+
+
+// Sets the background color for screenshot2 since it's different from screenshot 1
+.screenshot2 {
+  background-color: common.$background_marble;
+  // Using a variable from the common.scss to get the marble color from the fabric site
+}
+// Applies flex and lines up the content of screenshot2
+.screenshot2-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  // I just use flex and direction to line up the content to be efficient since the page only has two cards
+}
