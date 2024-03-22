@@ -10,6 +10,7 @@
   margin: 10px;
 }
 
+
 html {
   font-family: sans-serif;
 }
@@ -24,6 +25,7 @@ a {
   text-decoration: none;
   color: #464646;
 }
+
 
 figure,
 p {
@@ -72,7 +74,9 @@ button {
   padding: 16px 4px;
 }
 .iconMenu__item:focus {
-  outline: 2px solid #06befb;
+
+  outline: 2px solid #06BEFB;
+
 }
 .iconMenu__item-external {
   position: absolute;
@@ -98,7 +102,9 @@ button {
   opacity: 60%;
 }
 .input__searchBar:focus {
-  outline-color: #06befb;
+
+  outline-color: #06BEFB;
+
 }
 .input__searchBar__submit {
   display: flex;
@@ -119,13 +125,17 @@ button {
 .input__login {
   font-size: 12px;
   font-weight: bold;
-  background-color: #e5e5e5;
+
+  background-color: #E5E5E5;
+
   border: 0;
   height: 35px;
   width: 380px;
 }
 .input__login:hover {
-  background-color: #cccccc;
+
+  background-color: #CCCCCC;
+
 }
 .input__login:focus {
   border-bottom: 2px solid #0063fb;
@@ -138,6 +148,7 @@ button {
 .input__login:focus::placeholder {
   color: #0063fb;
 }
+
 .input__login-info {
   display: inline-flex;
   margin: 20px;
@@ -148,11 +159,13 @@ button {
   background-repeat: no-repeat;
   background-position: 96%;
 }
+
 .input__checkbox {
   cursor: pointer;
   height: 20px;
   width: 20px;
 }
+
 .input__checkbox-icon {
   margin-left: 155px;
   margin-top: 3px;
@@ -169,6 +182,7 @@ button {
   font-weight: 500;
   letter-spacing: 0.25px;
 }
+
 .login__btn {
   border-radius: 6px;
   padding: 16px;
@@ -176,7 +190,9 @@ button {
   width: 400px;
 }
 .login__btn-primary {
-  color: #fff;
+
+  color: #FFF;
+
   background-color: #0063fb;
 }
 .login__btn-flat {
@@ -184,7 +200,9 @@ button {
   background-color: transparent;
 }
 .login__btn-flat:hover {
-  background-color: #f1f9ff;
+
+  background-color: #F1F9FF;
+
   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3);
 }
 .login__info {
@@ -202,8 +220,11 @@ button {
   text-align: center;
 }
 .login__info:hover {
-  background-color: #f1f9ff;
+
+  background-color: #F1F9FF;
 }
+
+
 
 .card {
   font-family: "finn_light";
@@ -242,14 +263,17 @@ button {
 .card__phone-text {
   display: flex;
   flex-direction: column;
+
 }
 .card__login {
   height: 612px;
   width: 450px;
+
   background-color: #ffffff;
   box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.168627451), 1px 1px 10px 1px rgba(0, 0, 0, 0.1137254902);
   border-radius: 9px;
   margin-top: 125px;
+
 }
 .card__home {
   margin: 50px 0 50px 50px;
@@ -259,14 +283,16 @@ button {
   border-radius: 10px;
 }
 .card__home:hover {
-  background-color: #f1f9ff;
+
+  background-color: #F1F9FF;
 }
 .card__image {
   box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.1137254902);
-  background-image: url(../images/Cat.jpg);
+  background-image: url(../iconsImages/Cat.jpg);
   height: 299.33px;
   width: 301.33px;
-  border: solid #c3ccd9;
+  border: solid #C3CCD9;
+
   border-width: 2px;
   border-radius: 10px;
 }
@@ -280,13 +306,17 @@ button {
   width: 24px;
 }
 .card__image-icon:hover {
-  background-color: #e1edfe;
+
+  background-color: #E1EDFE;
+
 }
 .card__image-cost {
   margin-top: 215px;
   margin-left: 10px;
   font-size: 18px;
-  color: #ffffff;
+
+  color: #FFFFFF;
+
   font-weight: bolder;
 }
 .card__text {
@@ -300,6 +330,43 @@ button {
   font-size: 18px;
   color: #464646;
 }
+
+
+#pageOne .nav {
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+}
+#pageOne .nav li {
+  padding: 0 5px;
+}
+#pageOne .nav__item {
+  height: 44px;
+  margin: 0;
+}
+#pageOne .nav__item-left {
+  margin-right: 100px;
+}
+#pageOne main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#pageOne .iconMenu {
+  grid-template-columns: repeat(6, minmax(9rem, 1fr));
+  max-width: 980px;
+}
+#pageOne .flex {
+  display: flex;
+  align-items: center;
+}
+#pageOne .flex h1 {
+  margin-right: 10px;
+}
+#pageOne .flex #ad {
+  color: #0063fb;
+
 .card__footer {
   margin-top: 30px;
   text-align: center;
@@ -321,4 +388,5 @@ span a {
   display: flex;
   flex-direction: row;
   justify-content: center;
+
 }/*# sourceMappingURL=style.css.map */
