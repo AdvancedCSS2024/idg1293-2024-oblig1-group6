@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "finn_light";
+  src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Light.woff2);
+}
+@font-face {
+  font-family: "finn_bold";
+  src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Medium.woff2);
+}
 * {
   margin: 10px;
 }
@@ -17,8 +25,13 @@ a {
   color: #464646;
 }
 
-figure, p {
+figure,
+p {
   margin: 0;
+}
+
+p {
+  max-width: 60ch;
 }
 
 button {
@@ -59,27 +72,10 @@ button {
   padding: 16px 4px;
 }
 .iconMenu__item:focus {
-  outline: 2px solid #06BEFB;
+  outline: 2px solid #06befb;
 }
 .iconMenu__item-external {
   position: absolute;
-}
-
-.searchBar__submit {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  background-color: transparent;
-  max-width: 32px;
-}
-.searchBar__mapBtn a {
-  display: flex;
-  align-items: center;
-  width: 4rem;
-}
-.searchBar__mapBtn a-icon {
-  padding-right: 5px;
 }
 
 .input {
@@ -89,7 +85,8 @@ button {
   border-width: thin;
 }
 .input__searchBar {
-  width: 600px;
+  width: 840px;
+  height: 30px;
   background-image: url(../iconsImages/search.svg);
   background-repeat: no-repeat;
   background-position: 99%;
@@ -101,18 +98,34 @@ button {
   opacity: 60%;
 }
 .input__searchBar:focus {
-  outline-color: #06BEFB;
+  outline-color: #06befb;
+}
+.input__searchBar__submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  max-width: 32px;
+}
+.input__searchBar__mapBtn a {
+  display: flex;
+  align-items: center;
+  width: 4rem;
+}
+.input__searchBar__mapBtn a-icon {
+  padding-right: 5px;
 }
 .input__login {
   font-size: 12px;
   font-weight: bold;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   border: 0;
   height: 35px;
   width: 380px;
 }
 .input__login:hover {
-  background-color: #CCCCCC;
+  background-color: #cccccc;
 }
 .input__login:focus {
   border-bottom: 2px solid #0063fb;
@@ -125,10 +138,36 @@ button {
 .input__login:focus::placeholder {
   color: #0063fb;
 }
+.input__login-info {
+  display: inline-flex;
+  margin: 20px;
+  font-family: "finn_light";
+}
+.input__login-eye {
+  background-image: url(../iconsImages/eye-on.svg);
+  background-repeat: no-repeat;
+  background-position: 96%;
+}
 .input__checkbox {
   cursor: pointer;
   height: 20px;
   width: 20px;
+}
+.input__checkbox-icon {
+  margin-left: 155px;
+  margin-top: 3px;
+  padding: 12px;
+  border-radius: 50%;
+}
+.input__checkbox-icon:hover {
+  background-color: #f6f8fb;
+}
+
+.login {
+  font-family: "finn_bold";
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
 }
 .login__btn {
   border-radius: 6px;
@@ -137,7 +176,7 @@ button {
   width: 400px;
 }
 .login__btn-primary {
-  color: #FFF;
+  color: #fff;
   background-color: #0063fb;
 }
 .login__btn-flat {
@@ -145,7 +184,7 @@ button {
   background-color: transparent;
 }
 .login__btn-flat:hover {
-  background-color: #F1F9FF;
+  background-color: #f1f9ff;
   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3);
 }
 .login__info {
@@ -163,22 +202,54 @@ button {
   text-align: center;
 }
 .login__info:hover {
-  background-color: #F1F9FF;
+  background-color: #f1f9ff;
 }
 
+.card {
+  font-family: "finn_light";
+  font-size: 16px;
+  color: #767676;
+  margin-left: 0;
+}
+.card__a {
+  display: inline-flex;
+  color: #0063fb;
+  text-decoration: underline;
+  font-size: 14px;
+}
+.card__h1 {
+  color: #464646;
+  font-family: "finn_bold";
+  margin-left: 20px;
+}
+.card__logo-finn {
+  height: 12px;
+  margin-right: 225px;
+}
+.card__logo-schibsted {
+  height: 24px;
+}
 .card__phone {
-  background-color: #F1F9FF;
+  background-color: #f1f9ff;
   text-align: center;
   height: 480px;
   width: 648px;
+  margin-top: 200px;
+  margin-right: 0;
+  line-height: 22px;
+  overflow-y: scroll;
+}
+.card__phone-text {
+  display: flex;
+  flex-direction: column;
 }
 .card__login {
   height: 612px;
   width: 450px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.168627451), 1px 1px 10px 1px rgba(0, 0, 0, 0.1137254902);
   border-radius: 9px;
-  margin-left: 50px;
+  margin-top: 125px;
 }
 .card__home {
   margin: 50px 0 50px 50px;
@@ -188,14 +259,14 @@ button {
   border-radius: 10px;
 }
 .card__home:hover {
-  background-color: #F1F9FF;
+  background-color: #f1f9ff;
 }
 .card__image {
   box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.1137254902);
   background-image: url(../images/Cat.jpg);
   height: 299.33px;
   width: 301.33px;
-  border: solid #C3CCD9;
+  border: solid #c3ccd9;
   border-width: 2px;
   border-radius: 10px;
 }
@@ -209,13 +280,13 @@ button {
   width: 24px;
 }
 .card__image-icon:hover {
-  background-color: #E1EDFE;
+  background-color: #e1edfe;
 }
 .card__image-cost {
   margin-top: 215px;
   margin-left: 10px;
   font-size: 18px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: bolder;
 }
 .card__text {
@@ -228,4 +299,16 @@ button {
 .card__text-title {
   font-size: 18px;
   color: #464646;
+}
+.card__footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  word-spacing: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+span a {
+  color: #0063fb;
 }/*# sourceMappingURL=common.css.map */

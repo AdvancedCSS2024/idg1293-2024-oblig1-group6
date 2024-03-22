@@ -1,1 +1,324 @@
-/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "finn_light";
+  src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Light.woff2);
+}
+@font-face {
+  font-family: "finn_bold";
+  src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Medium.woff2);
+}
+* {
+  margin: 10px;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #464646;
+}
+
+figure,
+p {
+  margin: 0;
+}
+
+p {
+  max-width: 60ch;
+}
+
+button {
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0 16px;
+  margin: 0;
+  border-bottom: solid 1px;
+}
+.nav__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 2rem;
+  border-bottom: solid 2px;
+  border-color: transparent;
+}
+.nav__item:hover {
+  border-color: #0063fb;
+}
+.nav__item-right {
+  display: flex;
+  justify-content: end;
+  padding: 0 1rem;
+}
+
+.iconMenu {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(10rem, 1fr));
+}
+.iconMenu__item {
+  text-align: center;
+  padding: 16px 4px;
+}
+.iconMenu__item:focus {
+  outline: 2px solid #06befb;
+}
+.iconMenu__item-external {
+  position: absolute;
+}
+
+.input {
+  padding: 10px;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  border-width: thin;
+}
+.input__searchBar {
+  width: 840px;
+  height: 30px;
+  background-image: url(../iconsImages/search.svg);
+  background-repeat: no-repeat;
+  background-position: 99%;
+}
+.input__searchBar::-moz-placeholder {
+  opacity: 60%;
+}
+.input__searchBar::placeholder {
+  opacity: 60%;
+}
+.input__searchBar:focus {
+  outline-color: #06befb;
+}
+.input__searchBar__submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  max-width: 32px;
+}
+.input__searchBar__mapBtn a {
+  display: flex;
+  align-items: center;
+  width: 4rem;
+}
+.input__searchBar__mapBtn a-icon {
+  padding-right: 5px;
+}
+.input__login {
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #e5e5e5;
+  border: 0;
+  height: 35px;
+  width: 380px;
+}
+.input__login:hover {
+  background-color: #cccccc;
+}
+.input__login:focus {
+  border-bottom: 2px solid #0063fb;
+  outline: none;
+  border-radius: 0;
+}
+.input__login:focus::-moz-placeholder {
+  color: #0063fb;
+}
+.input__login:focus::placeholder {
+  color: #0063fb;
+}
+.input__login-info {
+  display: inline-flex;
+  margin: 20px;
+  font-family: "finn_light";
+}
+.input__login-eye {
+  background-image: url(../iconsImages/eye-on.svg);
+  background-repeat: no-repeat;
+  background-position: 96%;
+}
+.input__checkbox {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+.input__checkbox-icon {
+  margin-left: 155px;
+  margin-top: 3px;
+  padding: 12px;
+  border-radius: 50%;
+}
+.input__checkbox-icon:hover {
+  background-color: #f6f8fb;
+}
+
+.login {
+  font-family: "finn_bold";
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+}
+.login__btn {
+  border-radius: 6px;
+  padding: 16px;
+  border: none;
+  width: 400px;
+}
+.login__btn-primary {
+  color: #fff;
+  background-color: #0063fb;
+}
+.login__btn-flat {
+  color: #0063fb;
+  background-color: transparent;
+}
+.login__btn-flat:hover {
+  background-color: #f1f9ff;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+}
+.login__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  padding: 12px;
+  max-width: 48px;
+  max-height: 48px;
+  background-color: transparent;
+}
+.login__info-icon {
+  text-align: center;
+}
+.login__info:hover {
+  background-color: #f1f9ff;
+}
+
+.card {
+  font-family: "finn_light";
+  font-size: 16px;
+  color: #767676;
+  margin-left: 0;
+}
+.card__a {
+  display: inline-flex;
+  color: #0063fb;
+  text-decoration: underline;
+  font-size: 14px;
+}
+.card__h1 {
+  color: #464646;
+  font-family: "finn_bold";
+  margin-left: 20px;
+}
+.card__logo-finn {
+  height: 12px;
+  margin-right: 225px;
+}
+.card__logo-schibsted {
+  height: 24px;
+}
+.card__phone {
+  background-color: #f1f9ff;
+  text-align: center;
+  height: 480px;
+  width: 648px;
+  margin-top: 200px;
+  margin-right: 0;
+  line-height: 22px;
+  overflow-y: scroll;
+}
+.card__phone-text {
+  display: flex;
+  flex-direction: column;
+}
+.card__login {
+  height: 612px;
+  width: 450px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.168627451), 1px 1px 10px 1px rgba(0, 0, 0, 0.1137254902);
+  border-radius: 9px;
+  margin-top: 125px;
+}
+.card__home {
+  margin: 50px 0 50px 50px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding-bottom: 25px;
+  border-radius: 10px;
+}
+.card__home:hover {
+  background-color: #f1f9ff;
+}
+.card__image {
+  box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.1137254902);
+  background-image: url(../images/Cat.jpg);
+  height: 299.33px;
+  width: 301.33px;
+  border: solid #c3ccd9;
+  border-width: 2px;
+  border-radius: 10px;
+}
+.card__image-icon {
+  display: flex;
+  margin-left: 250px;
+  margin-top: 3px;
+  padding: 12px;
+  border-radius: 50%;
+  border: none;
+  width: 24px;
+}
+.card__image-icon:hover {
+  background-color: #e1edfe;
+}
+.card__image-cost {
+  margin-top: 215px;
+  margin-left: 10px;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bolder;
+}
+.card__text {
+  margin-left: 12px;
+}
+.card__text-place {
+  font-size: 12px;
+  color: #767676;
+}
+.card__text-title {
+  font-size: 18px;
+  color: #464646;
+}
+.card__footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  word-spacing: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+span a {
+  color: #0063fb;
+}
+
+.screenshot2 {
+  background-color: #f6f8fb;
+}
+
+.screenshot2-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */
