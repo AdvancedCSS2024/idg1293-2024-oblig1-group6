@@ -2,8 +2,11 @@
 @use "common.scss";
 
 // everything used for making screenshot 1
+
+
 #pageOne {
-    .nav {
+    
+    .nav *{
         gap: 0;
         justify-content: center;
         align-items: center;
@@ -48,7 +51,6 @@
         // fixing it so the map and searchbar, ambefalinger and the link, and ads is on the same line
     } 
 }
-
 
 
 
